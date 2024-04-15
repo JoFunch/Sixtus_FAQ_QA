@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html lang="da">
+  <body>
+    <center>
+      <h2>Hvordan kan vi hjælpe dig?</h2>
+      <h3>
+        Her er nogle af de oftest stillede spørgsmål vedrørende Sixtus Scanneren
+      </h3>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <br />
+      <button class="collapsible">
+        Hvordan får jeg data på Scannerens hjemmeside efter jeg er blevet givet
+        adgang til sitet?
+      </button>
+      <div class="content">
+        <p>
+          Scanneren er som udgangspunkt installeret uden at scanne nogle
+          accounts. På den måde kan virksomheder selv styre flowet af accounts,
+          som skal scannes.
+          <br />
+          <br />
+          Hvis ikke du ser noget data, er det enten fordi du ikke er tilføjet
+          til gruppen af accounts some skal scannes, eller fordi at din account
+          er igang med at blive scannet.
+          <br />
+          Hør din IT eller GDPR-ansvarlige om du er tilføjet i systemet.
+        </p>
+      </div>
+
+      <br />
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+
+      <style>
+        .collapsible {
+          background-color: #440075;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 85%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+          background-color: #440075;
+        }
+
+        .content {
+          padding: 0 18px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          background-color: #999999;
+          width: 78%;
+        }
+      </style>
+
+      <a href="da_index.html">Tilbage</a>
+    </center>
+  </body>
+</html>

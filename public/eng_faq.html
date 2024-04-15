@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+    <center>
+      <h1>How can we help you?</h1>
+      <h2>Here are some of the most frequently asked questions about the Scanner and its functionality</h2>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+          <!-- Edits the collapsible-button    -->
+         
+          </head>
+          <body>
+
+            <br>
+            <button class="collapsible">I have been given access to the Scanner Website, but there appears no graphs or data...</button>
+          <div class="content">
+            <p>Once installed, the default setting of the scanner is not to scan anything, and users have to manually be added to the scanning-process. <br>
+              If you do not see any data after being invited your account is either not added to the process properly or in the process of being scanned.
+          </div>
+          <br>
+          <button class="collapsible">Does the Sixtus Scanner allow for the deletion of GDPR Entries?</button>
+          <div class="content">
+            <p>Yes! The Sixtus Scanner allows for deletion of emails of Accounts which are available to the user. </p>
+            <p>Simply hit the square to mark an Entry in the left column and press "Delete" and "Yes". </p>
+            <p> Email Entry will then be deleted from the statistical overview, as Entry from the Report-site, and moved from the mail-folder to the GDPR Quarantine-folder</p>
+          </div>
+
+          <br>
+
+          <button class="collapsible">I have delete an email Outlook. When does the Scanner recognise the change and update?</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <br>
+          <button class="collapsible">I have delete an email through the Scanner web application, when does the statistics update?</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          
+          <br>
+          <button class="collapsible">How frequently does the scanner update its statisitics and Scan?</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <!-- Ensures that the collapsible drops down   -->
+          <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+            });
+          }
+          </script>
+
+          </body>
+          </html>
+      
+
+
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </div>
+        You are always welcome to contact us with your questions or concerns @:
+      </h3>
+      <p>jonas@sixtus-compliance.dk</p>
+      <a href="eng_index.html">Back</a>
+      <style>
+        .collapsible {
+          background-color: #440075;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 85%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover {
+          background-color: #440075;
+        }
+        
+        .content {
+          padding: 0 18px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          background-color: #999999;
+          width: 78%;
+        }
+        </style>
+    </center>
+  </body>
+</html>

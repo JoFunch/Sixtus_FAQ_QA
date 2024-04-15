@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="root"></div>
+    <div class="first-div">Overview-page.</div>
+    <p>
+      The front page consists of the Top-bar statistical overview of the Tenant,
+      two pie charts and a diachronic chart which displays the data of the
+      selected accounts of the tenant.
+    </p>
+    <p>
+      The charts and the figure represent the same data in three different ways;
+    </p>
+    <ol>
+      <li>GDPR-data by Category</li>
+      <li>GDPR-data by Domain,</li>
+      <li>and data in Time.</li>
+    </ol>
+    <p>
+      The three data-representations are interactive as well as act in
+      hierarchy; a click on either one will shape the rest of the Overview-page
+    </p>
+    <p>
+      For example, a user may click on the green &#34;GDPR&#34;-portion in the
+      Category-chart, then select &#34;Work&#34; as their Domain and on the
+      REPORT-emoji in the temporal chart to extract all Work-related GDPR-Cases
+      related to that user.
+    </p>
+    <p>
+      This serves as an easy filtering tool so the user as quickly and easily
+      may find what category in what time-period they desire.
+    </p>
+    <p>
+      The &#34;Reset + Reload&#34;-button refreshes the overview site with the
+      most recent scans should there be new cases to report. The button does not
+      initialise any scanning itself nor use or deplete any internal resources;
+      a mere fetch-button built-in.
+    </p>
+
+    <p>
+      The Overview-page also has the filtering option of selecting either / or
+      only OneDrive, SharePoints or Emails (including Attachments).
+    </p>
+    <p>
+      On the Overview-page is also a general statistical overview of the scanned
+      Tenant, referred to as &#34;The Top Bar&#34;. The top bar has 8 points
+      divided into a total number and a count. The total numbers have the colour
+      blue while the red colour belongs to the count.
+    </p>
+    <ol>
+      <li>
+        Emails (&#34;Scanned&#34; and &#34;GDPR&#34;) represent the total emails
+        scanned in the Tenant and the count of emails in which there has been
+        found any number of GDPR-related cases (If 1 email has 2 cases of GDPR,
+        1 in the body and two in an attachment, there is 1 count of &#34;Email
+        GDPR&#34; and 1 &#34;Scanned&#34; email). (What if the email has 0 count
+        but 1 in attachments?)
+      </li>
+      <li>
+        Attachments (&#34;Scanned&#34; and &#34;GDPR&#34;) are similar to
+        &#34;Emails&#34;, only that these two numbers only concern themselves
+        with the attachments of emails (and not OneDrive or SharePoint)
+      </li>
+      <li>
+        Files (&#34;Scanned&#34; and &#34;GDPR&#34;) are exactly those of
+        OneDrive and SharePoint collected into one.
+      </li>
+      <li>
+        Accounts is a stand-alone count and represents the number of Tenant
+        Accounts scanned.
+      </li>
+      <li>
+        GDPR Cases are the count of the total amount of Cases /observations of
+        GDPR in the entire Tenant. These include all Cases found in Email,
+        OneDrive, SharePoint, and Attachments. 1 GDPR Case equals to 1
+        observation of GDPR-related information regardless of Category or Area
+        or Time-stamp.
+      </li>
+    </ol>
+    <p>
+      Any deletion made inside the cloud scanner is instantaneously (upon
+      refresh + reload) reflect the statistical changes while the Top-Bar will
+      update once the following ingestion function (Database call) runs. The
+      default of the ingestion is 10 minutes and also requires a Refresh +
+      Reload.
+    </p>
+
+    <a href="eng_index.html">Back</a>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>Scanning</h3>
+        <p>This page hopes to bring as much transparency to the scanner and its logics and functionality for its users to understand.
+    <h2>The First Scan</h2>
+    <p>Once the scanner is installed, the scanner does by default not initiate any scanning. This default setting prevents any unwanted scanning-initiation and allows the company to control the initiation, scalability, and cloud resources of the scanner.
+        <br /> <br />
+        The Superuser must in their Configuration page allow users to be scanned or skipped before the scanners ingestion (data fetch/loading) function will feed the scanning-queue (what the scanner fetches to scan and inserts into its database).
+        Once users are added, the scanner will begin scanning and not before. 
+        <br /><br />
+        Once the Scanner is initiated, the scanner will follow a "work until finish"-logic. The Scanner will queue mails, attachments, OneDrive, and SharePoint until selected users are depleted. Users may always be added or skipped in the Configuration-Page.
+
+    </p>
+    <h2>A Regular Scan</h2>
+    <p>Once the scanner is up to date (i.e nothing in its queue), it will enter another "mode" of scanning. At this point, the scanner will go into sleep-mode at 6 PM Central European Time and resume at 8 AM.
+    <h3>Sleep-mode</h3>
+       <p> While the sleepmode will imply large resource-savings, the desire of scanning-completion and the speed and urgency implied expected remains a priority. 
+       </p>
+    <h3>Something in queue</h3>
+    <p>As a rule, the scanner's ingestion function continuously feeds a scanner's queue, and in turn, if there is something in queue, the scanner will continue to scan.
+        <br />
+    </p>
+    <p>While the scanner does have a sleep-mode, the sleepmode is only activated once the scanner is done (i.e. once the queue is empty). 
+        By this logic, the scanner will not enter sleep mode when the company scales its users in the scanner, but work until completion.
+    </p> 
+    
+    <h2>Resources of the Scanner</h2>
+    
+    <a href="eng_index.html">Back</a>
+  </body>
+</html>
