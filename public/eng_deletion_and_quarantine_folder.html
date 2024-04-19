@@ -9,25 +9,28 @@
     <h3>Deletion through Sixtus Scanner</h3>
     </center>
       <p>Momentarily following a deletion of an email from the Sixtus Scanner Webapp, the mail-row will disappear from the report-site, while the Overview Page will update its statistics upon the following database-update (once every 5. minute). 
-        <br>
-        The email containing GDPR-data will immediately be transported to the “GDPR Quarantine”-folder created in the mailbox of whomever "owned" the email.  </p>
+        <br><br>
+        The email containing GDPR-data will immediately be transported to the “GDPR Quarantine”-folder created in the mailbox of whomever "owns" the email.  </p>
         <br>
         <center>
-        <img src="picture\Components\Deletion\QuarantineInOutlook.png" alt="Computer Man" style="max-width: 800px; height: auto;">
+        <img src="picture\Components\Deletion\QuarantOutlook.png" alt="Computer Man" style="max-width: 800px; height: auto;">
         </center>
-    <p>The purpose of the GDPR Quarantine folder is to act as a GDPR-data ONLY folder, so that the GDPR-data deleted within an account is always accessible without the necessity to filter between unwanted or already deleted mail.
-          
-  <p>Any deletion made inside the cloud scanner is instantaneously (upon refresh + reload) reflected in the statistical oveve rview while the Top-Bar will update once the following ingestion function (Database call) runs. The default of the ingestion is 10 minutes and also requires a Refresh + Reload.</p>
-  
+    <p>The purpose of the GDPR Quarantine folder is to act as a GDPR-data ONLY folder, so that the GDPR-data deleted within an account is always accessible without the necessity to filter between spam or already deleted mail.
+      <br><br>
+      The Quarantine Folder is disregarded in the statsitics, so any deletions made directly impacts the stastistics. There
+      <Br><Br>
+        It is also important to note that there is no automatic deletion involved in the Quarantine folder. The folder, then, has to be emptied / deleted by the user through Outlook. This decision is made for safety reasons
+    </p>
+        
   <br>
   <br>
   <center>
   <h3  >Deletion in Outlook </h3>
   </center>
-  <p>If a user decides instead to delete tagged emails from their outlook directly, their emails will as usual go to their "Deleted Folder" and not rerouted through their Quarantine Folder.</p><br>
-  <p>Furthermore, by default, the scanner does not track items in the deleted folder, be it GDPR-tagged or not. This is to avoid any confusion between web-app deletions and regular outlook-deletions and in continuation as to what is being displayed in the web-app. </p>
+  <p>If a user decides instead to delete tagged emails from their outlook directly, their emails will as usual go to their "Deleted Items" and not rerouted through their Quarantine Folder.</p><br>
+  <p>By default, the scanner does not show in the report nor in statistics items in the deleted folder or the Quarantine folder, be it GDPR-tagged or not. This is to avoid any confusion reading the statistics in the web-app. </p>
   <br>
-  <p>It is only the default Deleted Folder which the Scanner ignores; any custom-made folders with deletion-rules similar to that of the trash-can will be included in the scanner's statisitics and report-page. </p>  
+  <p>It is only the standard "Deleted Items" which the Scanner ignores of all the regular folders; any custom-made folders with deletion-rules similar to that of "Deleted Items" will be included in the scanner's statisitics and report-page. </p>  
   </body>
   <br>
     <a href="eng_deep_dive.html">Back</a>
