@@ -1,42 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <body>
+    <Center>
     <h2>Quarantine Folder and Email Deletion.</h2>
-    <p>
-      In the report-page, there is a multi-selector whose purpose is to allow
-      for (multiple) deletion of emails. The user may freely delete mails from
-      the section of the Tenants (however many accounts) they have access to.
-      Once selected, a button will appear to delete.
+    </center>
+    <p>This Section explains the flow and dynamics of deletio of emails and what users are to expect once initiating any type of deletion.</p>
+    <center>
+    <h3>Deletion through Sixtus Scanner</h3>
+    </center>
+      <p>Momentarily following a deletion of an email from the Sixtus Scanner Webapp, the mail-row will disappear from the report-site, while the Overview Page will update its statistics upon the following database-update (once every 5. minute). 
+        <br>
+        The email containing GDPR-data will immediately be transported to the “GDPR Quarantine”-folder created in the mailbox of whomever "owned" the email.  
     </p>
-    <p>
-      Momentarily following its deletion, the mail-row will disappear from the report-site and from the statistics. The email containing GDPR-data will immediately be transported to the “GDPR Quarantine”-folder created in the mailbox of whomever the deleted mail(s) belonged.  
-    </p
-    <p>
-      The purpose of the folder is three-fold:
-      <ul>
-        <li>It will act as a GDPR-data-ONLY-folder, so that the GDPR-data deleted within an account is always accessible without the necessity to filter between unwanted or already deleted mail.
+    <p>The purpose of the GDPR Quarantine folder is to act as a GDPR-data ONLY folder, so that the GDPR-data deleted within an account is always accessible without the necessity to filter between unwanted or already deleted mail.
           
-        </li>
-        <br>
-        <li>The folder also has an inherent deletion-policy; emails within the folder will automatically be deleted after 180 days without transit to the “deleted”-folder of an account. To avoid confusion, each email will have to exceed 180 days from the time it was moved to the Quarantine Folder to be deleted; the folder does not empty itself after 180 days of its creation / first emails being moved into it. 
-    
-        </li>
-        <br>
-        <li>The 180 days acts as a minimum retainment of data in accordance with GDPR and, to the user, acts as possibility to revert deletions. 
-
-        </li>
-      </ul>
   <p>Any deletion made inside the cloud scanner is instantaneously (upon refresh + reload) reflected in the statistical oveve rview while the Top-Bar will update once the following ingestion function (Database call) runs. The default of the ingestion is 10 minutes and also requires a Refresh + Reload.</p>
   
   <br>
   <br>
-  <h2>Deletion of emails from the Outlook-app </h2>
+  <center>
+  <h3  >Deletion in Outlook </h3>
+  </center>
   <p>If a user decides instead to delete tagged emails from their outlook directly, their emails will as usual go to their "Deleted Folder" and not rerouted through their Quarantine Folder.</p><br>
   <p>Furthermore, by default, the scanner does not track items in the deleted folder, be it GDPR-tagged or not. This is to avoid any confusion between web-app deletions and regular outlook-deletions and in continuation as to what is being displayed in the web-app. </p>
   <br>
   <p>It is only the default Deleted Folder which the Scanner ignores; any custom-made folders with deletion-rules similar to that of the trash-can will be included in the scanner's statisitics and report-page. </p>  
   </body>
   <br>
-    <a href="eng_index.html">Back</a>
+    <a href="eng_deep_dive.html">Back</a>
 
 </html>
