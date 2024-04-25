@@ -6,7 +6,7 @@
     </center>
         <p>This page hopes to bring as much transparency to the scanner and its logics and functionality for its users to understand.
     <h2>The First Scan</h2>
-    <p>Once the scanner is installed, the scanner does by default not initiate any scanning. This default setting prevents any unwanted scanning-initiation and allows the company to control the initiation, scalability, and cloud resources of the scanner.
+    <p>Once the scanner is installed, the scanner does by default not initiate any scanning. This default setting prevents any unwanted scanning-initiation and allows the company to control the initiation, scalability, quaratine-template setup, and cloud resources of the scanner.
         <br /> <br />
         A Superuser must in their Configuration-page allow users to be scanned or skipped before the scanners ingestion function will feed the scanning-queue.
         Once users are added, the scanner will begin scanning and not before. 
@@ -20,7 +20,7 @@
     <h3>Something in queue</h3>
     <p>As a rule, the scanner's ingestion function continuously feeds a scanner's queue, and in turn, if there is something in queue, the scanner will continue to scan.
         <br />
-    <p>That means that while the scanner does have a sleep-mode, the sleepmode is only activated once the scanner is done with what had been selected by the super-user (i.e. once the queue is empty). 
+    <p>That means that while the scanner does have a sleep-mode, but the sleepmode is only activated once the scanner is done with what had been selected by the super-user (i.e. once the queue is empty). 
         By this logic, the scanner will not enter sleep mode when the company scales its users in the scanner, but work until completion.
     </p> 
     

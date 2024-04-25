@@ -27,14 +27,13 @@
           scanned in the Tenant and the count of emails in which there has been
           found any number of GDPR-related cases (If 1 email has 2 cases of GDPR,
           1 in the body and two in an attachment, there is 1 count of &#34;Email
-          GDPR&#34; and 1 &#34;Scanned&#34; email). (What if the email has 0 count
-          but 1 in attachments?)
+          GDPR&#34; and 1 &#34;Scanned&#34; email).
         </li>
         <br>
         <li>
           Attachments (&#34;Scanned&#34; and &#34;GDPR&#34;) are similar to
-          &#34;Emails&#34;, only that these two numbers only concern themselves
-          with the attachments of emails (and not OneDrive or SharePoint)
+          &#34;Emails&#34;, only that these two numbers concern themselves
+          with the attachments of emails (and not OneDrive or SharePoint).
         </li>
         <br>
         <li>
@@ -44,15 +43,15 @@
         <br>
         <li>
           Accounts is a stand-alone count and represents the number of Tenant
-          Accounts scanned.
+          Accounts scanned as well as the account-number accessible to the user. GDPR responsibles and IT personel may have a broader view of more accounts than other employees.
         </li>
         <br>
         <li>
-          GDPR Cases are the count of the total amount of Cases /observations of
-          GDPR in the entire Tenant. These include all Cases found in Email,
-          OneDrive, SharePoint, and Attachments. 1 GDPR Case equals to 1
-          observation of GDPR-related information regardless of Category or Area
-          or Time-stamp.
+          GDPR Cases represents the count of the total amount of GDPR cases/observations of the entire Tenant.
+           These include all Cases found in Email,
+          OneDrive, SharePoint, and Attachments. 1 GDPR Case equals to 1 
+          entry in the report-page and shouldnt be confused with a row. One row, i.e. one email or file, may contain numerous cases. 
+          <br> For instance, in the top-bar picture shown above, there are in total 12291 items (emails, file and attachments) containing PII which contains 23946 GDPR cases/observations.
         </li>
       </ol>
 
@@ -67,9 +66,11 @@
         The Overview-page also has the filtering option of selecting either / or
         only OneDrive, SharePoints or Emails (including Attachments).
       </p>
+      <p> Use for filtering. Multiple Domains may be selected. Choosing any piece of the pies charts will alter the time-table below.
 
       <h3>Time Table </h3>
-      and a diachronic chart which displays the data of the accounts of the tenant.
+      <p>The diachronic chart displays the data of the account(s) accessible to the user and their cases according to standards of critical time-periods. 
+        <br><Br> By clicking on the Report-button next to any number, the user is presented with the data in detail in the report-page. The Action-column contains a CSV-generation button which downloads specified data for BI purposes.
       <br><br>
       <img src="picture\Components\Overview\DiachronChart.png" alt="Computer Man" style="max-width: 700px; height: auto;">
       <br><br>
