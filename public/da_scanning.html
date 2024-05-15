@@ -1,8 +1,28 @@
 <!DOCTYPE html>
-<meta charset="UTF-8" />
 <html lang="da">
   <body>
+    <Center>
     <h2>Scanning</h2>
+    </center>
+        <p>Selvom Scanningskomponenten ikke er direkte visuel for brugere, er det denne sides formål at forklare om den bagvedliggende scanningslogik og process.
+    <h2>Den første Scanning</h2>
+    <p>Når Scanneren er installeret i et Microsoft Miljø begynder den ikke med at scanne brugeres data med det samme. Scanneren bliver tværtimod installeret blankt og vil forblive sådan indtil en superbruger tilføjer brugere. Denne standard forhindrer uønsket igangsættelse af Scanneren og tillader virksomheden selv at kontrollere kommunikation, proces, udrulning, cloud-resurser og skalering.  
+        <br /> <br />
+        Det er altså Superbrugerens første funktion at tilføje eller springe brugere over, før scanneren begynder at sætte data i kø. 
+      
+        <br /><br />
+        Men når brugere først er sat i kø, stopper scanneren ikke før den er færdig med alle tilføjet brugere.  Superbrugere kan altid tilføje eller fjerne brugere fra Scanneren igen på deres konfigurationsside. 
+
+    </p>
+    <h2>Et Almindeligt Scan</h2>
+    <p>Når de valgte brugere er scannet igennem første gang og scanneren er ajour, går scanneren ind i en anden operationstilstand. Her vil scanneren gå i dvale om aftenen og natten og være tilgængelig for brugere igen om morgenen. Dvaletilstanden er til for at spare på cloudresurser og påvirker ikke ellers hastigheden eller funktionaliteten af scanneren. Som standard er dvaletiderne kl. 18-08. 
+
+    <h3>Køsystemet</h3>
+    <p>Som udgangspunkt vil Scannerens ingest funktion kontinuerligt give scannerens datakø, og vil så længe, der er noget i kø, scanne. Det betyder at så længe der er data at scanne, vil scanneren være tilgængelig for brugere at kigge, også udover dvaletilstande, skulle disse allerede være opnået. 
+      <br><br>Hvis et firma skalerer til flere brugere efter første portion er scannet, vil dvaletilstanden altså forgå, og scanneren vil fortsætte indtil den er ajour igen. 
+        <br />
+    
+    
     <a href="da_deep_dive.html">Tilbage</a>
   </body>
 </html>

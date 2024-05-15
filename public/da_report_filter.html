@@ -1,8 +1,53 @@
 <!DOCTYPE html>
-<meta charset="UTF-8" />
-<html lang="da">
+<html lang="en">
   <body>
-    <h2>Rapportfilter</h2>
-    <a href="da_deep_dive.html">Tilbage</a>
+    <Center>
+    <h2>Rapportfilter.<h2>
+    </center>
+    <p>
+      Scanneren tilbyder dybdegående filtreringsmuligheder for bedre at kunne manøvrere igennem store mængder data.        <br><br>
+      Ved at trykke på filtreringsknappen, kommer der et pop-up vindue, hvor brugeren må specificere det data de søger. 
+      <br>
+      <center>
+      <img src="picture\Components\Report_page_filter\filter.png" alt="Computer Man" style="max-width: 900px; height: auto;">
+      </center>
+      <br>
+      <b>Følgende er en kort beskrivelse af de forskellige filtreringsmuligheder.</b>
+      <dl>
+        <dd>Email Date Range: Mails og filer modtager eller oprettet i datospænd
+        </dd>
+        <br />
+        <dd>Content-type: Hvilken form/oprindelse for data, der skal søges i 
+        </dd><br />
+        <dd>Accounts: Hvis Accounts, der skal søges i
+        </dd>
+        <br />
+        <dd>Account contains: filtrering af accounts baseret på en to filter content in accounts based on a feature, for instance, their @domain (Sixtus-compliance.dk find GDPR-data in all accounts with @sixtus-compliance.dk in their email.) 
+        </dd>
+        <br />
+        <dd>Senders: Based off of total list of email-senders within the accounts a user is able to interact with. A super-user list will contain a senders list of all senders of the total tenant as they have access to all accounts.  
+        </dd>
+        <br />
+        <dd>Sender-domain: A quicker way to narrow down senders by groups  
+        </dd>
+        <br />
+        <dd>Clear filter: Will Clear any and all filters inserted to a completely clear filter. 
+        </dd>
+        <br />
+        <dd>Reset filter will assume a standard filter (which is by default set to include the entirety of the user’s accessibility). 
+        </dd>
+        <br />
+        <dd>Restore to Current Filter will restore any filters most recently inserted by then cleared.
+        </dd>
+        <br />
+        <dd>GDPR Classifications will allow users quickly to filter what type of GDPR-data they want to browse in their findings. The three-structure is interactive and may assume both Categories and Areas. 
+        </dd>
+      </dl>
+    </p>
+    <br><br>
+    <h3>Usage and Example</h3>
+    <p>Make sure to correctly clear the "Sender" or "Account" filters properly if a single email is to be selected. The filter will make a too large fetch if, for instance, the "Sender Domain" is full of entries while the "Sender" contains only a single account if the purpose was to find the single account. 
+      
+      <br><br><a href="da_deep_dive.html">Tilbage</a>
   </body>
 </html>

@@ -1,8 +1,79 @@
 <!DOCTYPE html>
-<meta charset="UTF-8" />
-<html lang="da">
+<html lang="en">
   <body>
-    <h2>Rapportside</h2>
+    <Center>
+    <h2>Rapportsiden</h2>
+    </center>
+    <p>
+      På rapportsiden kan medarbejdere tilgå deres GDPR-relateret data i mails og filer som må være knyttet deres brugere.  Superbrugere vil have flere accounts tilknyttet da de oftest er afdelingsledere, IT-administratorer eller GDPR-ansvarlige. Rapporten kan tilgås direkte (i tom format) eller fra Overblikssiden med et forudindstillet datafilter.  
+    </p>
+    <p>Rapportsiden består af tre komponenter: 
+      <ul>en mulighed for at downloade udvalgt data i CSV-format,</ul>
+      <ul>en filterknap til datafiltrering (forklaret <a href="eng_report_filter.html">her)</a></ul>
+      <ul>og udvalgt data i rækker.</ul>
+    </p>
+    <Center>
+      <img src="picture\Components\Report-page\reportpagefull.png" alt="Computer Man" style="max-width: 700px; height: auto;">
+    
+
+    <h3>GDPR Data </h3>
+  </center>
+    <p>GDPR data optræder i rapportsiden i rækker som repræsentanter for den størrelse dataen er fundet i, altså mails eller filer (Attachments, SharePoint eller OneDrive). En række kan blive foldet ud ved at klikke på ’+’, hvor alle dets GDPR-observationer er samlet og kan blive eksamineret.
+       <br> <br> 
+       Medarbejdere kan fra rapportsiden også slette mails. Dette kan gøres ved at klikke boksene af i venstre side og klikke på ”Delete”-knappen. Sitet er dynamisk, så flere bokse kan blive klikket af ved at holde shift inde.
+       <br> <br> Tjekboksen i toppen af siden autovælger alle rækkerne, ønsker man at slette alt udvalgt data. Ved at godkende sletningen, skal det ikke direkte forstås som en slette-funktion. Mailsne bliver overført til en ny-oprettet ”GDPR Quarantine”-mappe i Outlook og efter et øjeblik bliver Overblikssidens statistik opdateret.   
+       <br> <br>
+       <Center>
+       <img src="picture\Components\Report-page\deleteprompt.png" alt="Computer Man" style="max-width: 700px; height: auto;">
+       <br> <br> 
+       </center>
+
+      <b>En række består af følgende:</b>
+    </p>
+    <dl>
+      <dd>Date: klokkeslættet for modtagelsen eller oprettelsen af emailen eller filen 
+      </dd>
+      <dd>Account: i hvilken brugers indboks mailen ligger eller hvilken bruger har oprettet filen i SharePoint eller OneDrive. 
+      </dd>
+      <dd>Message / File Information:
+        <dl> Email
+          <dd>From: mailkonto mailen er sendt fra
+          </dd>
+          <dd>To: hvilken mailkonto har modtaget mailen (kan indeholde flere modtagere) 
+          </dd>
+          <dd>Folder: I hvilken Outlook-mappe mailen er fundet i 
+          </dd>
+          <dd>Subject: emnefeltet 
+          </dd>
+        </dl>
+        <dl>OneDrive & SharePoint
+          <dd>Location: Hvor filen er opbevaret 
+          </dd>
+          <dd>Filenavn
+          </dd>
+          <dd>Path: URL til den givne fil-lokation, interaktiv. 
+          </dd>
+        </dl>
+      </dd>
+      <dd>GDPR Components: overblik  over hvor GDPR-observationenerne kan blive fundet i elementet. Der er to former:
+      <dl>“Message Body”: -> X GDPR Entries
+        <dd>GDPR-observationenerne er et indhold i teksten i en mail 
+        </dd>
+      </dl>
+      <dl>Filename -> X GDPR Entries
+        <dd>GDPR-observationerne er fundet i en fil eller attachment</dd>
+
+        </dl> 
+        <dl>Skulle der være et "!" ved observationerne, betyder det at gdpr-observationenerne tilhøre artikel 9 om sensitivt indhold.
+        </dl> 
+      </dd>
+    </dl>
+    <center>
+    <img src="picture\Components\Report-page\gdprcaserow.png" alt="Computer Man" style="max-width: 900px; height: auto;">
+
+    <br><br>
+    </center>
+
     <a href="da_deep_dive.html">Tilbage</a>
   </body>
 </html>
