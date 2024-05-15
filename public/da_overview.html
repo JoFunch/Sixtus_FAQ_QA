@@ -1,8 +1,89 @@
 <!DOCTYPE html>
-<meta charset="UTF-8" />
 <html lang="da">
   <body>
-    <h2>Forside</h2>
+    <Center>
+    <h2>Overblikssiden</h2>
+    </Center>
+    <p>
+      Dette er din personlige overbliksside. Her får du overblikket over dit GDPR-relaterede data tilhørende din MS-bruger opdelt i klassifikation og tid. 
+      <br><br>
+      Du kan frit klikke rundt i tabellen og graferne for at præcisere den mængde GDPR-relaterede data du ønsker at undersøge. 
+      <br><br>
+      Overblikssiden består af Top-bjælken, to lagkagediagrammer, og en tidstabel. 
+      <Center>
+      <br><br>
+      <h3> Top-bjælken
+      </h3>
+      
+      <br><br>
+      <img src="picture\Components\Overview\OverviewTopBar.png" alt="Computer Man" style="max-width: 700px; height: auto;">
+      </Center>
+      <br> <br>
+      <p>Topbjælken viser 3 områder i både totale tal og i GDPR tal og 2 enkeltstående optællinger. De totale områder er vist i blåt og de GDPR-relaterede i rødt. 
+      </p>
+      <ol>
+        <li>
+          E-mails ”Scanned”/”GDPR” er hhv to tal der viser den samlede mængde af scannede e-mails og den mængde af emails som indeholder GDPR-relaterede data.  
+          <br> Hvis en email har 1 eller flere GDPR-observationer tæller "E-mails GDPR" kun 1, da mailen kategorisk indeholder GDPR.
+          <br> Hvad der forstås ved e-mails, her, er udelukket den mængde tekst som fremkommer i e-mails "body", og altså ikke attachments.
+        </li>
+        <br>
+        <li>
+          Attachments ”Scanned”/”GDPR” er samme optælning som Emails blot for attachments. 
+          <br>Et attachment kan godt indeholde GDPR og markeres uden at den tilsvarende mail nødvendigvis markeres og omvendt. Et attachment er kun bilag, og selvom de også opbevares i clouden, tæller de ikke som hverken SharePoint eller OneDrive.
+
+        </li>
+        <br>
+        <li>
+          Files “Scanned”/”GDPR” optællingen af filer i SharePoint og OneDrive som indeholder GDPR-observationer.  
+        </li>
+        <br>
+        <li>
+          Accounts er det tal som den pågældende account ”råder” over og har adgang til. Superbrugere kan se de brugere som er scannet, hvor normale brugere kun kan se dem selv. Det er typisk IT-administratorer og GDPR-ansvarlige som har superbrugeradgange.
+        </li>
+        <br>
+        <li>
+          GDPR Cases er det totale tal for GDPR-observationer i alle filer og emails som den pågældende bruger har adgang til, dvs. alle mails, hele SharePoint, hele OneDrive og alle attachments. <br><br> 
+          1 GDPR-case skal dog ikke forstås som 1 mail eller 1 fil, men snarere 1 GDPR-observation, altså et tekst-stykke hvori et individ er kædet til personhenførbart information. <br><br> Der er ikke en grænse for hvor mange eller få e-mails eller filer kan have. 
+          I rapport-siden vil én række repræsentere en fil eller en mail, og hvis man udfolder en række vil man se GDPR-cases/observationer tilhørende den pågældende mail eller fil. 
+          <br> 
+        </li>
+      </ol>
+
+      <br> <br>
+      <Center>
+      <h3>Lagkagediagrammerne
+      </h3>
+      <img src="picture\Components\Overview\Piecharts.png" alt="Computer Man" style="max-width: 700px; height: auto;">
+      </Center>
+      <br><br>
+      <p>
+        Overblikssiden giver brugeren muligheden for direkte at filtrere det viste data. Her er der mange muligheder, både at vælge oprindelsessted, altså mail eller fil-type, men også Klassificering (”Classification”) og Område (”Area”). Disse to diagrammer er hhv. 1. og 2. niveau af en hierarkisk filtrering. Forholdet mellem de to skal forstås som at ”Area” er underopdelinger af ”Classifications” som repræsentere GDPR Artiklerne. 
+        <br><br>
+        <Center>
+          
+        <h3>Tidstabellen</h3>
+        <img src="picture\Components\Overview\DiachronChart.png" alt="Computer Man" style="max-width: 700px; height: auto;">
+        </Center>
+        Tidstabellen viser GDPR-observationerne i tre tidsintervaller, sidste uge, sidste seks måneder, og over seks måneder. Ved at klikke på rapport-ikonet ved et vilkårligt tal, bliver brugeren overført til rapport-siden, hvor netop de observationer vises. 
+        <br> <br>Yderst til højre kan brugeren downloade en CSV-fil med observationer under de valgte filtreringsønsker.
+      <br><br>
+      <br><br>
+    </p>
+    <Center>
+    <h2>Brug og Eksempel
+    </h2>
+    </center>
+    <p>
+      De tre data-repræsentationer er alle dynamiske og ændrer hinanden ved interaktion; et klik i et diagram ændrer resten af siden, så brugerne hurtigere kan præcisere og vælge den data de ønsker.  
+    </p>
+    <p>
+      Et eksempel kunne være, at en bruger ønsker at finde alt arbejdsrelateret GDPR-data Scanneren har fundet relateret til brugeren. Brugeren klikker på direkte på ”Work” i ”Area” og får i tidstabellen de GDPR-observationer, som er arbejdsrelateret i de tre tidsperioder. Sidst kan brugere klikke sig ind i rapportsiden hvor det er relevant at kigge.  
+    </p>
+    <p>
+      Ændringer, sletninger og tilføjelser bliver opdateret i Overblikssiden hvert 5. minut. Opdatér siden eller klik på ”Refresh + Reload” for at se ændringerne. 
+    </p>
+
     <a href="da_deep_dive.html">Tilbage</a>
   </body>
 </html>
